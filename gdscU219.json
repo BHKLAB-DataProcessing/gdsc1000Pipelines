@@ -7,13 +7,11 @@
     "cmd": [
       "Rscript", 
       "/pfs/downloadGDSCU219/downloadData.R"]
-    
-  },
+    },
   
   "resource_requests": {
     "memory": "4G"
   },
-  
   "input": {
     "cross": [
       {
@@ -25,3 +23,4 @@
       }
     ]
   }
+}
