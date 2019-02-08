@@ -1,0 +1,27 @@
+{
+  "pipeline": {
+    "name": "gdscU219"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx",
+    "cmd": [
+      "Rscript", 
+      "/pfs/downloadGDSCU219/downloadData.R"]
+    
+  },
+  
+  "resource_requests": {
+    "memory": "4G"
+  },
+  
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSCU219.git",
+          "name": "",
+          "branch": "master"
+        }
+      }
+    ]
+  }
