@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "name": "BrainArray"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx",
+    "cmd": [
+      "Rscript", 
+      "/pfs/downloadBrainArray/downloadBA.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "100MB"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadBrainArray.git",
+          "name": "",
+          "branch": "master"
+        }
+      }
+    ]
+  }
+}
