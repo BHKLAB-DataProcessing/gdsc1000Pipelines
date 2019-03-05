@@ -1,0 +1,38 @@
+{
+  "pipeline": {
+    "name": "gdscU219normalized"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx",
+    "cmd": [
+      "Rscript", 
+      "/pfs/runAffyu219/runAffy.R"],
+    "debug": true
+  },
+  
+  "resource_requests": {
+    "memory": "1G"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/runAffyu219.git",
+          "branch": "master"
+        }
+      },
+      {
+        "atom": {
+          "repo": "BrainArray",
+          "glob": "/"
+        }
+      },
+      {
+        "atom": {
+          "repo": "gdscU219",
+          "glob": "/"
+        }
+      }
+    ]
+  }
+}

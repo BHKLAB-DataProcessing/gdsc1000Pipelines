@@ -1,23 +1,22 @@
 {
   "pipeline": {
-    "name": "BrainArray"
+    "name": "downAnnotations"
   },
   "transform": {
     "image": "bhklab/pharmacogx",
     "cmd": [
-      "Rscript", 
-      "/pfs/downloadBrainArray/downloadBA.R"]
+      "/bin/bash", "/pfs/annotation/download.sh"]
     },
   
   "resource_requests": {
-    "memory": "1G"
+    "memory": "100M"
   },
   "input": {
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/downloadBrainArray.git",
-          "name": "",
+          "url": "https://github.com/BHKLAB-Pachyderm/annotation.git",
+          "name": "annotation",
           "branch": "master"
         }
       }

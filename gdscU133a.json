@@ -1,22 +1,22 @@
 {
   "pipeline": {
-    "name": "BrainArray"
+    "name": "gdscU133a"
   },
   "transform": {
     "image": "bhklab/pharmacogx",
     "cmd": [
       "Rscript", 
-      "/pfs/downloadBrainArray/downloadBA.R"]
+      "/pfs/downloadGDSCArray/downloadArray.R"]
     },
   
   "resource_requests": {
-    "memory": "1G"
+    "memory": "100M"
   },
   "input": {
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/downloadBrainArray.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSCArray.git",
           "name": "",
           "branch": "master"
         }

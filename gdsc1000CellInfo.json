@@ -1,0 +1,33 @@
+{
+  "pipeline": {
+    "name": "gdsc1000CellInfo"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v2",
+    "cmd": [
+      "Rscript", 
+      "/pfs/downloadGDSC1000cells/downloadData.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "100M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSC1000cells.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "atom": {
+          "repo": "downAnnotations",
+          "name": "downAnnotations",
+          "glob": "/"
+        }
+      }
+    ]
+  }
+}

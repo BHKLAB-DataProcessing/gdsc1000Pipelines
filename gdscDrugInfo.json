@@ -1,0 +1,33 @@
+{
+  "pipeline": {
+    "name": "gdscDrugInfo"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/downloadGDSCdrugs/downloadData.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "100M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSCdrugs.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "atom": {
+          "repo": "downAnnotations",
+          "name": "downAnnotations",
+          "glob": "/"
+        }
+      }
+    ]
+  }
+}
