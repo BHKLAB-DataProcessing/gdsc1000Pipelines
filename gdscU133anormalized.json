@@ -1,12 +1,12 @@
 {
   "pipeline": {
-    "name": "gdscU219normalized"
+    "name": "gdscU133anormalized"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/runAffyu219/runAffy.R"],
+      "/pfs/runAffyu133a/runAffy.R"],
     "debug": true
   },
   
@@ -17,7 +17,7 @@
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/runAffyu219.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/runAffyu133a.git",
           "branch": "master"
         }
       },
@@ -29,7 +29,13 @@
       },
       {
         "atom": {
-          "repo": "gdscU219",
+          "repo": "gdscU133a",
+          "glob": "/"
+        }
+      },
+      {
+        "atom":{
+          "repo": "gdscCellInfo",
           "glob": "/"
         }
       }

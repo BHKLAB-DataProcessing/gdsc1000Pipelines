@@ -1,0 +1,73 @@
+{
+  "pipeline": {
+    "name": "GDSC"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/getGDSC/getGDSC.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "100M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/getGDSC.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "atom": {
+          "repo": "downAnnotations",
+          "name": "downAnnotations",
+          "glob": "/"
+        }
+      }, {
+        "atom": {
+          "repo": "gdscU133anormalized",
+          "glob": "/"
+        }
+      }, {
+        "atom": {
+          "repo": "gdscU133a",
+          "glob": "/"
+        }
+      }, {
+        "atom": {
+          "repo": "gdscU219normalized",
+          "glob": "/"
+        }
+      }, {
+        "atom": {
+          "repo": "gdscU219",
+          "glob": "/"
+        }
+      }, {
+        "atom":{
+          "repo": "gdscDrugInfo",
+          "glob": "/"
+        }
+      }, {
+        "atom":{
+          "repo": "gdscCellInfo",
+          "glob": "/"
+        }
+      }, {
+        "atom":{
+          "repo": "gdscRawSensitivity",
+          "glob": "/"
+        }
+      }, {
+        "atom":{
+          "repo": "gdscProfiles",
+          "glob": "/"
+        }
+      }
+    ]
+  }
+}

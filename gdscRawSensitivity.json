@@ -1,35 +1,30 @@
 {
   "pipeline": {
-    "name": "gdscU219normalized"
+    "name": "gdscRawSensitivity"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/runAffyu219/runAffy.R"],
-    "debug": true
-  },
+      "/pfs/downloadGDSCSensRaw/downloadData.R"]
+    },
   
   "resource_requests": {
-    "memory": "1G"
+    "memory": "100M"
   },
   "input": {
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/runAffyu219.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSCSensRaw.git",
+          "name": "",
           "branch": "master"
         }
       },
       {
         "atom": {
-          "repo": "BrainArray",
-          "glob": "/"
-        }
-      },
-      {
-        "atom": {
-          "repo": "gdscU219",
+          "repo": "downAnnotations",
+          "name": "downAnnotations",
           "glob": "/"
         }
       }

@@ -1,0 +1,36 @@
+{
+  "pipeline": {
+    "name": "gdscProfiles"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/gdscAssembleRecalc/assembleData.R"]
+    },
+  "parallelism_spec":{
+    "constant": 1
+  },
+  "resource_requests": {
+    "memory": "1G",
+    "cpu": 1
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/gdscAssembleRecalc.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "atom": {
+          "repo": "gdscRecalculated",
+          "name": "input",
+          "glob": "/"
+        }
+      } 
+    ]
+  }
+}
