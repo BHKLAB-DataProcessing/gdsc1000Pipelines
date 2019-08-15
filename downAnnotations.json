@@ -15,7 +15,7 @@
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/annotation.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/Annotations.git",
           "name": "annotation",
           "branch": "master"
         }

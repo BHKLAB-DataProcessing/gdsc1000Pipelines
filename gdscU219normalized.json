@@ -11,7 +11,7 @@
   },
   
   "resource_requests": {
-    "memory": "1G"
+    "memory": "4G"
   },
   "input": {
     "cross": [
@@ -22,13 +22,13 @@
         }
       },
       {
-        "atom": {
+        "pfs": {
           "repo": "BrainArray",
           "glob": "/"
         }
       },
       {
-        "atom": {
+        "pfs": {
           "repo": "gdscU219",
           "glob": "/"
         }

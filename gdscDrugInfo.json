@@ -22,7 +22,7 @@
         }
       },
       {
-        "atom": {
+       "pfs": {
           "repo": "downAnnotations",
           "name": "downAnnotations",
           "glob": "/"
