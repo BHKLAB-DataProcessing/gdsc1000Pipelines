@@ -1,0 +1,77 @@
+{
+  "pipeline": {
+    "name": "GDSCv1"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/getGDSC/getGDSC2019.R", "v1"]
+    },
+  "parallelism_spec":{
+    "constant": 1
+  },
+  "resource_requests": {
+    "memory": "1G",
+    "cpu": 0.1
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/getGDSC.git",
+          "name": "",
+          "branch": "master"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "gdscProfilesV1",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "gdscU219normalized",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "gdscCNA",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "gdscMutPanel",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "downAnnotations",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "gdsc1000CellInfo",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "gdscDrugInfo",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "GDSC2019v1Normalize",
+          "glob": "/"
+        }
+      }    
+    ]
+  }
+}

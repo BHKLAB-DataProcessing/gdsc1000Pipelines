@@ -1,0 +1,33 @@
+{
+  "pipeline": {
+    "name": "GDSC2019v1Normalize"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/gdscCurvesNormalize/gdscProcessRaw.R", "v1"]
+    },
+  
+  "resource_requests": {
+    "memory": "13000M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/gdscCurvesNormalize.git",
+          "name": "",
+          "branch": "master"
+        }
+      },{
+        "atom": {
+          "repo": "gdscRawSensitivity",
+          "glob": "/",
+          "name": "in"
+        }
+      }
+      
+    ]
+  }
+}

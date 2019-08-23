@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "gdscRecalculated"
+    "name": "gdscRecalculatedv1"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
@@ -9,7 +9,7 @@
       "/pfs/gdscRecalculateFromRaw/recalculateSlice.R"]
     },
   "parallelism_spec":{
-    "coefficient": 1
+    "coefficient": 4
   },
   "resource_requests": {
     "memory": "1G",
@@ -25,7 +25,7 @@
         }
       },
       {
-        "atom": {
+        "pfs": {
           "repo": "GDSC2019v1Normalize",
           "name": "input",
           "glob": "/slices/*"

@@ -1,15 +1,15 @@
 {
   "pipeline": {
-    "name": "gdscRecalculated"
+    "name": "gdscProfilesV1"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "Rscript", 
-      "/pfs/gdscRecalculateFromRaw/recalculateSlice.R"]
+      "/pfs/gdscAssembleRecalc/assembleData.R"]
     },
   "parallelism_spec":{
-    "coefficient": 1
+    "constant": 1
   },
   "resource_requests": {
     "memory": "1G",
@@ -19,16 +19,16 @@
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/gdscRecalculateFromRaw.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/gdscAssembleRecalc.git",
           "name": "",
           "branch": "master"
         }
       },
       {
-        "atom": {
-          "repo": "GDSC2019v1Normalize",
+        "pfs": {
+          "repo": "gdscRecalculatedv1",
           "name": "input",
-          "glob": "/slices/*"
+          "glob": "/"
         }
       } 
     ]

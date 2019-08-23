@@ -1,12 +1,12 @@
 {
   "pipeline": {
-    "name": "gdscRawSensitivity"
+    "name": "gdscMutPanel"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
     "cmd": [
       "bash", 
-      "/pfs/downloadGDSCSensRaw/download.sh"]
+      "/pfs/GDSCTargettedPanel/downloadFile.sh"]
     },
   
   "resource_requests": {
@@ -16,7 +16,7 @@
     "cross": [
       {
         "git": {
-          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSCSensRaw.git",
+          "url": "https://github.com/BHKLAB-Pachyderm/GDSCTargettedPanel.git",
           "name": "",
           "branch": "master"
         }
