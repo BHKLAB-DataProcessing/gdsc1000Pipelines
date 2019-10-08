@@ -1,0 +1,26 @@
+{
+  "pipeline": {
+    "name": "downloadgdscrnaseq"
+  },
+  "transform": {
+    "image": "bhklab/pharmacogx:v3",
+    "cmd": [
+      "Rscript", 
+      "/pfs/downloadGDSCRNAProcessed/downloadRNA.R"]
+    },
+  
+  "resource_requests": {
+    "memory": "100M"
+  },
+  "input": {
+    "cross": [
+      {
+        "git": {
+          "url": "https://github.com/BHKLAB-Pachyderm/downloadGDSCRNAProcessed.git",
+          "name": "",
+          "branch": "master"
+        }
+      }
+    ]
+  }
+}
