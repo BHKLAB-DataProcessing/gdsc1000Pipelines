@@ -71,7 +71,13 @@
           "repo": "GDSC2019v2Normalize",
           "glob": "/"
         }
-      }    
+      },
+      {
+        "pfs": {
+          "repo": "downloadgdscrnaseq",
+          "glob": "/"
+        }
+      } 
     ]
   }
 }
