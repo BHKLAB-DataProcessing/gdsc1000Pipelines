@@ -78,13 +78,6 @@
           "repo": "downloadgdscrnaseq",
           "glob": "/"
         }
-      },
-      
-      {
-        "pfs": {
-          "repo": "downloadGDSCRNAProcessed",
-          "glob": "/"
-        }
       }
     ]
   }
