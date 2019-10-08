@@ -78,6 +78,13 @@
           "repo": "downloadgdscrnaseq",
           "glob": "/"
         }
+      },
+      
+      {
+        "pfs": {
+          "repo": "gdscmutation_all",
+          "glob": "/"
+        }
       }
     ]
   }
