@@ -12,8 +12,7 @@
     "coefficient": 1
   },
   "resource_requests": {
-    "memory": "1G",
-    "cpu": 0.1
+    "memory": "1.0G"
   },
   "input": {
     "cross": [
