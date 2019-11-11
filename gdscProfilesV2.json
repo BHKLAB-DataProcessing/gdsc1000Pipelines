@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "gdscProfilesV1"
+    "name": "gdscProfilesV2"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
@@ -23,7 +23,7 @@
       },
       {
         "pfs": {
-          "repo": "gdscRecalculatedv1",
+          "repo": "gdscRecalculatedv2",
           "name": "input",
           "glob": "/"
         }
