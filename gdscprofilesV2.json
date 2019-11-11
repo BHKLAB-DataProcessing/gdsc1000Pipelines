@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "gdscProfilesV2"
+    "name": "gdscprofilesV2"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
