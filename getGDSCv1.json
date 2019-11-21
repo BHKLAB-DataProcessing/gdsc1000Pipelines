@@ -85,6 +85,12 @@
           "repo": "gdscmutation_all",
           "glob": "/"
         }
+      },
+      {
+        "pfs": {
+          "repo": "gdsc_cnv_new",
+          "glob": "/"
+        }
       }
     ]
   }
