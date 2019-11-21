@@ -26,7 +26,7 @@
       },
       {
         "pfs": {
-          "repo": "gdscProfilesV2",
+          "repo": "gdscprofilesV2",
           "glob": "/"
         }
       },
