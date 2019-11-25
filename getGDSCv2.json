@@ -3,7 +3,7 @@
     "name": "GDSCv2"
   },
   "transform": {
-    "image": "bhklab/pharmacogx:v3",
+    "image": "bhklab/pharmacogx:v5",
     "cmd": [
       "Rscript", 
       "/pfs/getGDSC/getGDSC2019.R", "v2"]
