@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "gray_rnaseq_Kallisto_0.46.1"
+    "name": "gray_rnaseq_Kallisto_0_46_1"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
