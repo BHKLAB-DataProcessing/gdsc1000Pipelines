@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "GDSCv1"
+    "name": "GDSCV1"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v7",
