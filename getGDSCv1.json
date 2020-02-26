@@ -6,13 +6,13 @@
     "image": "bhklab/pharmacogx:v7",
     "cmd": [
       "Rscript", 
-      "/pfs/getGDSC/getGDSC2019.R", "v1"]
+      "/pfs/getGDSC/getGDSC2019.R", "Kallisto-0.46.1", "Gencode_v33", "v1" ,"asdssha742832sb"]
     },
   "parallelism_spec":{
     "constant": 1
   },
   "resource_requests": {
-    "memory": "1G",
+    "memory": "2G",
     "cpu": 0.1
   },
   "input": {
