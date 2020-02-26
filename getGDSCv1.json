@@ -75,7 +75,7 @@
       
       {
         "pfs": {
-          "repo": "downloadgdscrnaseq",
+          "repo": "gdsc_rnaseq_kallisto_0_46_1",
           "glob": "/"
         }
       },
