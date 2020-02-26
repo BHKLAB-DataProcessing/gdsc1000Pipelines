@@ -1,12 +1,12 @@
 {
   "pipeline": {
-    "name": "GDSCV1"
+    "name": "GDSCv1"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v7",
     "cmd": [
       "Rscript", 
-      "/pfs/getGDSC/getGDSC.R", "Kallisto-0.46.1", "Gencode_v33", "v1" ,"asdssha742832sb"]
+      "/pfs/getGDSC/getGDSC2019.R", "Kallisto-0.46.1", "Gencode_v33", "v1" ,"asdssha742832sb"]
     },
   "parallelism_spec":{
     "constant": 1
