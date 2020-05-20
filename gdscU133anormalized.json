@@ -22,19 +22,19 @@
         }
       },
       {
-        "atom": {
+        "pfs": {
           "repo": "BrainArray",
           "glob": "/"
         }
       },
       {
-        "atom": {
+        "pfs": {
           "repo": "gdscU133a",
           "glob": "/"
         }
       },
       {
-        "atom":{
+        "pfs":{
           "repo": "gdscCellInfo",
           "glob": "/"
         }
