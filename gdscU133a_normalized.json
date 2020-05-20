@@ -23,6 +23,13 @@
       },
       {
         "pfs": {
+          "repo": "downAnnotations",
+          "name": "downAnnotations",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
           "repo": "BrainArray",
           "glob": "/"
         }
