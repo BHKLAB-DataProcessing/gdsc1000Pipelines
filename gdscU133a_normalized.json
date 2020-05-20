@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "gdscU133anormalized"
+    "name": "gdscU133a_normalized"
   },
   "transform": {
     "image": "bhklab/pharmacogx:v3",
