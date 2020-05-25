@@ -6,7 +6,7 @@
     "image": "bhklab/pharmacogx2.0:v1",
     "cmd": [
       "Rscript", 
-      "/pfs/getGDSC/getGDSC2019.R", "Kallisto-0.46.1", "Gencode_v33", "v1" ,"8.0","asdssha742832sb"]
+      "/pfs/getGDSC/getGDSC2019.R", "Kallisto-0.46.1", "Gencode_v33", "v1" ,"8.2","asdssha742832sb"]
     },
   "parallelism_spec":{
     "constant": 1
