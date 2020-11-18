@@ -3,7 +3,7 @@
     "name": "GDSCv2"
   },
   "transform": {
-    "image": "bhklab/pharmacogx2.0:v1",
+    "image": "bhklab/pharmacogx2.0:v2",
     "cmd": [
       "Rscript", 
       "/pfs/getGDSC/getGDSC2019.R", "Kallisto-0.46.1", "Gencode_v33", "v2" ,"8.2","asdssha742832s56"]
