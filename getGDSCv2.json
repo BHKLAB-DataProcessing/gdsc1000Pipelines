@@ -89,6 +89,18 @@
           "repo": "gdsc_cnv_new",
           "glob": "/"
         }
+      },
+      {
+        "pfs": {
+          "repo": "filterGDSCMut",
+          "glob": "/"
+        }
+      },
+      {
+        "pfs": {
+          "repo": "DepMapMutations",
+          "glob": "/"
+        }
       }
     ]
   }
